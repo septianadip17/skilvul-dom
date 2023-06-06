@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Event Elemen</title>
+</head>
+
+<body>
+
+    <!-- <div id="test-event" style="background-color:pink;width:120px;height:20px;padding:40px;">
+        Mouse Over Me!
+    </div>
+    <button onclick="removeHandler()">Remove Event</button>
+
+    <script src="elemen.js"></script> -->
+
+    <!-- soal -->
+    <div id="mine">
+        <button onclick="removeHandler()" id="myBtn">Remove</button>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("mine").addEventListener("mousemove", myFunction);
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = Math.random();
+        }
+
+        function removeHandler() {
+            document.getElementById("mine").removeEventListener("mousemove", myFunction);
+        }
+    </script>
+</body>
+
+</html>
